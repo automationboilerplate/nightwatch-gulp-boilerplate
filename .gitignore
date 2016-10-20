@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+test/e2e_spec/screenshots
+test/e2e_reports/
+coverage
+test/coverage
+test/cobertura
+test/cloverraw
+test/e2e_reports
+test/e2e_spec/screenshots
+test-results.xml
+json-results.xml
+xunit.xml
+eslint.xml
+reports
+.idea
