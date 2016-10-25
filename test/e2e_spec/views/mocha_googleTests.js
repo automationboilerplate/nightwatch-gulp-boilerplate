@@ -1,5 +1,5 @@
+
 describe('Google demo test for Mocha', function() {
-  tags: ['mocha'],
 
   describe('for demo purposes', function() {
 
@@ -27,7 +27,7 @@ describe('Google demo test for Mocha', function() {
 
     it('uses BDD to run the Google simple test', function(client) {
       client
-        .url('http://google.com')
+        .url('https://www.google.com')
         .expect.element('body').to.be.present.before(1000);
 
       client.setValue('input[type=text]', ['nightwatch', client.Keys.ENTER])

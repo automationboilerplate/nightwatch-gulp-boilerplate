@@ -3,6 +3,9 @@ module.exports = (function(settings) {
   if (process.env.sel_grid == 'local') {
     settings.test_settings.default.selenium_host = 'localhost.nike.com';
   }
+  if (process.env.test_runner == 'mocha') {
+    settings.test_runner.type = 'mocha';
+  }
   if (process.env.browser == 'chrome') {
   	settings.test_settings.default.desiredCapabilities.browserName = 'chrome';
   }

@@ -37,6 +37,7 @@ module.exports = function(opts) {
         process.env.test_env = args.testEnv;
         process.env.test_port = args.testPort;
         process.env.sel_grid = args.selGrid;
+        process.env.test_runner = args.testRunner;
         process.env.test_branch = args.testBranch || '';
         process.env.httpProtocol = args.httpProtocol;
         process.env.browser = args.browser;
