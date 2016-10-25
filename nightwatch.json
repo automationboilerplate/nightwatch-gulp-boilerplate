@@ -17,6 +17,10 @@
         }
     },
 
+    "test_runner" : {
+      "type" : "default"
+    },
+
     "test_settings" : {
         "default" : {
             "launch_url" : "google.com",
@@ -37,12 +41,11 @@
             }
         },
 
-        "mocha_tests" : {
+        "mocha" : {
             "launch_url" : "google.com",
             "selenium_port"  : 4444,
             "selenium_host"  : "your Selenium grid name",
             "silent": true,
-            "test_runner": "mocha",
             "screenshots" : {
                 "enabled" : true,
                 "on_failure" : true,
