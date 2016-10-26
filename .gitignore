@@ -1,6 +1,7 @@
 node_modules
 .DS_Store
 test/e2e_spec/screenshots
+mochawesome-reports
 test/e2e_reports/
 coverage
 test/coverage

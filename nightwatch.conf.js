@@ -4,7 +4,17 @@ module.exports = (function(settings) {
     settings.test_settings.default.selenium_host = 'localhost.nike.com';
   }
   if (process.env.test_runner == 'mocha') {
-    settings.test_runner.type = 'mocha';
+    settings.test_runner = {
+      "type": "mocha",
+      "options": {
+        "ui": "bdd",
+        "reporter": "mochawesome",
+        "reporterOptions": {
+          "reportName": "Test Report",
+          "reportTitle": "Functional Test Report",
+          "reportDir": __dirname + '/test/e2e_reports'
+        }
+      }};
   }
   if (process.env.browser == 'chrome') {
   	settings.test_settings.default.desiredCapabilities.browserName = 'chrome';
