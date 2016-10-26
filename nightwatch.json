@@ -17,10 +17,6 @@
         }
     },
 
-    "test_runner" : {
-      "type" : "default"
-    },
-
     "test_settings" : {
         "default" : {
             "launch_url" : "google.com",

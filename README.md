@@ -29,7 +29,7 @@ Mac:
   On a command prompt run the Selenium-server-standalone jar by providing
   `java -jar selenium-server-standalone-v#.jar`(Replace # with your version)
 Open another command prompt and navigate to the project path and provide
-`gulp e2e --selGrid local --tag default`
+`gulp e2e --selGrid local --tag default`. You can also run the gulp tests using the mocha test runner by providing the command `gulp e2e --selGrid local --testRunner mocha`.
 You can pass all the arguments supported by nightwatch and it is provided in e2e.js file. I have a default configuration in nightwatch.json file and update the required ones at runtime by passing them as args.
 
 Feel free to update this repo, by creating a pull request. For more information contact vicky.008@gmail.com.
