@@ -1,5 +1,5 @@
 'use strict'
-var BasePageObject = require('./BasePageObject.js');
+var BasePageObject = require('./BasePage.js');
 
 var GooglePage = BasePageObject.extend({
     route: '/',
