@@ -1,3 +1,5 @@
+var GooglePage = require('../pages/GooglePage');
+
 module.exports = {
   tags: ['default'],
   'demo test google' : function (client) {
@@ -8,7 +10,7 @@ module.exports = {
 
   'part two' : function(client) {
     client
-      .setValue('input[type=text]', ['nightwatch', client.Keys.ENTER])
+      .setValue(GooglePage.txtSearch, ['nightwatch', client.Keys.ENTER])
       .pause(5000)
       .assert.containsText('#main', 'Night Watch')
       .end();
