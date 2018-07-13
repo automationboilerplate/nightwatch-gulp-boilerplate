@@ -1,7 +1,7 @@
 var GooglePage = require('../pages/GooglePage');
 
 module.exports = {
-  tags: ['default'],
+  '@tags': ['default'],
   'demo test google' : function (client) {
     client
       .url('http://google.com')

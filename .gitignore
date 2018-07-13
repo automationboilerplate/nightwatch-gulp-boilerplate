@@ -15,3 +15,5 @@ xunit.xml
 eslint.xml
 reports
 .idea
+package-lock.json
+selenium-debug.log
