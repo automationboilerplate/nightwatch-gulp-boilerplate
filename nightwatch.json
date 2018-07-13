@@ -5,14 +5,14 @@
     "custom_assertions_path" : "",
 
     "selenium" : {
-        "start_process" : false,
-        "server_path" : "",
+        "start_process" : true,
+        "start_session": true,
+        "server_path" : "bin/selenium-server-standalone-3.5.3.jar",
         "log_path" : "",
-        "host" : "your Selenium grid name",
         "port" : 4444,
         "cli_args" : {
             "webdriver.gecko.driver" : "./bin/geckodriver",
-            "webdriver.chrome.driver" : "./bin/chromedriver",
+            "webdriver.chrome.driver" : "./bin/chromedriver_2.40",
             "webdriver.ie.driver" : ""
         }
     },
@@ -21,7 +21,7 @@
         "default" : {
             "launch_url" : "google.com",
             "selenium_port"  : 4444,
-            "selenium_host"  : "your Selenium grid name",
+            "selenium_host"  : "localhost",
             "silent": true,
             "screenshots" : {
                 "enabled" : true,
@@ -30,7 +30,7 @@
                 "path" : "test/e2e_reports/failureScreenshots"
             },
             "desiredCapabilities": {
-                "browserName": "firefox",
+                "browserName": "chrome",
                 "javascriptEnabled": true,
                 "acceptSslCerts": true,
                 "loggingPrefs": { "browser": "ALL" }
@@ -40,7 +40,7 @@
         "mocha" : {
             "launch_url" : "google.com",
             "selenium_port"  : 4444,
-            "selenium_host"  : "your Selenium grid name",
+            "selenium_host"  : "localhost",
             "silent": true,
             "screenshots" : {
                 "enabled" : true,
@@ -67,6 +67,7 @@
         "firefox" : {
             "desiredCapabilities": {
                 "browserName": "firefox",
+                "marionette": true,
                 "javascriptEnabled": true,
                 "acceptSslCerts": true
             }
